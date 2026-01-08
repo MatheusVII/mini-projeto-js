@@ -1,0 +1,105 @@
+.__index-start-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        width: 88%;
+        height: 15rem;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        border: solid 2px var(--border);
+    }
+}
+
+.__index-orders{
+    width: 100%;
+    align-items: center;
+    margin-top:5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    & .__index-search{
+        width: 88%;
+
+        & .__index-barra-pesquisa{
+            margin-top: var(--space-md);
+            width: 100%;
+            height: 6rem;
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+            padding: 0 0 0 4rem;
+            border-radius: 3rem;
+            border: solid 2px var(--border);
+            box-shadow: var(--shadow);
+
+            & input{
+                height:4rem;
+                width: 23rem;
+                border-radius: 15px;
+                border:solid 1px var(--border);
+                padding:1rem;
+                font-size: var(--text-lg);
+            }
+        }
+    }
+
+    & .__index-order-list{
+        width: 88%;
+        height: 24rem;
+        background-color:var(--secondary);
+        border-radius: 1rem;
+        padding: 13px;
+        box-shadow: var(--shadow);
+
+        & .__index-thead{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            background: var(--primary);
+            height: 3rem;
+            align-content: center;
+            border-radius:12px 12px 0 0;
+            font-size: var(--text-lg);
+            font-weight: var(--font-weight-medium);
+
+            & p{
+                width: 100%;
+                padding: 8px;
+            }
+        }
+
+        & .__index-tbody{
+            width: 100%;
+            background:var(--tertiary);
+            height: 18.5rem;
+            max-height: 18.5rem;
+            overflow-y: auto;
+            margin-top: 10px;
+            border-radius: 0 0 12px 12px;
+            
+            & ul{
+                width: 100%;
+
+                & li{
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    transition: var(--transition);
+                    padding:8px 0;
+
+                    & p{
+                        width: 100%;
+                        padding: 8px;
+                    }
+
+                    &:hover{
+                        background: var(--primary-hover);
+                    }
+                }
+            }
+        }
+    }
+}

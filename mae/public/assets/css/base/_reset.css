@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--text);
+    background: var(--surface-solid);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    min-height: 100vh;
+    padding-left: var(--nav-width);
+    padding-top: 2rem;
+
+    @media (width < 768px) {
+        padding-top: 0;
+        padding-bottom: calc(var(--nav-height-mobile) + var(--safe-area));
+    }
+}
+
+a {
+    color: inherit;        /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+button {
+    border: none;          /* Remove borda padrão */
+    background: none;      /* Remove fundo padrão */
+    font: inherit;         /* Usa a mesma fonte do resto da página */
+    color: inherit;        /* Herda a cor do pai */
+    cursor: pointer;       /* Mostra mãozinha ao passar o mouse */
+}
+
+
+ul {
+    list-style: none;
+}
+
+li{
+    font-size: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
