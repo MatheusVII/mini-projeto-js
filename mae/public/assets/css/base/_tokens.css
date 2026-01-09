@@ -3,12 +3,14 @@
     --primary-hover: #5d0fa6;
     --secondary:#5a189a;
     --tertiary:#9d4edd;
+    --tertiary-hover:#b167ed;
     --text: #ffff;
     --text-muted: #bdbdbd;
     --surface-solid: #ffc880;
     --surface: #ff9100;
     --border: rgba(130, 130, 130, 0.393);
-    --striped:#4f1687;
+    --negative-btn:#F87171;
+    --negative-btn-hover:#EF4444;
 
     --space-xs: 0.25rem;   /* 4px - espaços mínimos */
     --space-sm: 0.5rem;    /* 8px - espaços pequenos */
@@ -24,6 +26,7 @@
     --font-weight-bold: 600;
     --font-weight-medium: 500;
     --radius: 10px;
+    --radius-btn: 6px;
     --radius-full: 9999px;  /* Para fazer círculos perfeitos */
 
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.258);
