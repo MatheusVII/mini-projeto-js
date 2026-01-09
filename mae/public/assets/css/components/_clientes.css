@@ -48,11 +48,11 @@
                 align-items: center;
                 padding: 15px 5rem 15px 2rem;
                 height: 6rem;
-                transition: background 0.3s ease;
+                transition: background var(--transition);
                 font-size: var(--text-lg);
 
                 &:hover{
-                    background-color: var(--striped);
+                    background: var(--secondary-hover);
                 }
 
                 & img{

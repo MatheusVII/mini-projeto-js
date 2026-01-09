@@ -12,18 +12,28 @@
     ?>
     <main>
         <section class="requisicoes">
-            <ul>
+            <ul class="requisicoes-pendentes">
                 <li>
                     <div class="info">
-                        <div class="perfil"><img src="../../../public/assets/img/osama.jpg" alt=""></div>
-                        <div class="nome">Patricia de abreu dos santos</div>
-                        <div class="horario">12/02 as 14:00</div>
+                        <div class="col1"><img src="../../../public/assets/img/perfil.png" alt=""></div>
+                        <div class="col2">
+                            <p>Matheus viana ferreira paz</p>
+                            <p class="servico">UNHA EM GEL</p>
+                        </div>
+                        <div class="col3">
+                            <p>14/02 as 22:00</p>
+                        </div>
                     </div>
                     <div class="btns">
                         <button class="btn-aceitar">Aceitar</button>
                         <button class="btn-recusar">Recusar</button>
+                        <p>Pendente</p>
                     </div>
                 </li>
+            </ul>
+            
+            <ul class="requisicoes-aceitas">
+
             </ul>
         </section>
     </main>
