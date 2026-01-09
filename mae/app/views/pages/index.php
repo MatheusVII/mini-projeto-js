@@ -25,15 +25,34 @@
                         </div>
                     </div>
                     <div class="btns">
-                        <button class="btn-aceitar">Aceitar</button>
-                        <button class="btn-recusar">Recusar</button>
+                        <div class="botoes">
+                            <button class="btn-aceitar">Aceitar</button>
+                            <button class="btn-recusar">Recusar</button>
+                        </div>
                         <p>Pendente</p>
                     </div>
                 </li>
             </ul>
             
             <ul class="requisicoes-aceitas">
-
+                <li>
+                    <div class="info">
+                        <div class="col1"><img src="../../../public/assets/img/perfil.png" alt=""></div>
+                        <div class="col2">
+                            <p>Matheus viana ferreira paz</p>
+                            <p class="servico">UNHA EM GEL</p>
+                        </div>
+                        <div class="col3">
+                            <p>14/02 as 22:00</p>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <div class="botoes">
+                            <button class="btn-finalizar">Finalizar</button>
+                        </div>
+                        <p>Aceito</p>
+                    </div>
+                </li>
             </ul>
         </section>
     </main>

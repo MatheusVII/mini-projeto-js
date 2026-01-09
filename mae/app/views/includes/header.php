@@ -8,6 +8,6 @@
         </ul>
     </nav>
     <section class="__logo">
-        <img src="../../../public/assets/img/osama.jpg" alt="logo">
+        <img src="../../../public/assets/img/perfil.png" alt="logo">
     </section>
 </header>
