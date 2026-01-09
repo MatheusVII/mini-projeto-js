@@ -55,6 +55,22 @@
                 </li>
             </ul>
         </section>
+        <section class="requisicoes-finalizadas">
+            <ul>
+                <li>
+                    <div class="info">
+                        <div class="perfil"><img src="../../../public/assets/img/perfil.png" alt=""></div>
+                        <div class="nome"><p>Rosengela da silva de souza ribeiro</p></div>
+                        <div class="horario-aceito"><p>12/02 as 14:00</p></div>
+                        <div class="horario-final"><p>12/02 as 16:00</p></div>
+                        <div class="ganho"><p>R$30,00</p></div>
+                    </div>
+                    <div class="badge">
+                        <p>Finalizado</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
     <script type="module" src="../../../public/assets/js/main.js"></script>
 </body>
