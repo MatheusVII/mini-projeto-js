@@ -11,6 +11,14 @@
         include_once '../includes/header.php';
     ?>
     <main>
+        <section class="inicio-header">
+            <div class="header1">
+                <h1>REQUISIÇÕES PENDENTES</h1>
+            </div>
+            <div class="header2">
+                <h1>REQUISIÇÕES ACEITAS</h1>
+            </div>
+        </section>
         <section class="requisicoes">
             <ul class="requisicoes-pendentes">
                 <li>
@@ -56,6 +64,7 @@
             </ul>
         </section>
         <section class="requisicoes-finalizadas">
+            <h1>REQUISIÇÕES FINALIZADAS</h1>
             <ul>
                 <li>
                     <div class="info">
