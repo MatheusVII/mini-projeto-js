@@ -1,24 +1,5 @@
 {
   "tarefas": [
-    {
-      "titulo": "destruir a humanidade amanha",
-      "descricao": "o titulo ja diz tudo",
-      "id": 1
-    },
-    {
-      "titulo": "outra",
-      "descricao": "outra qualquer, nada de especial",
-      "id": 3
-    },
-    {
-      "titulo": "como",
-      "descricao": "como sacar o pino do coquuilio traseiro do  guindaste zulaine 75",
-      "id": 4
-    },
-    {
-      "titulo": "cavalo",
-      "descricao": "comprar um cavalo top de linha",
-      "id": 5
-    }
+
   ]
 }
