@@ -38,7 +38,7 @@ header{
     & input{
         height: 4rem;
         width: 40rem;
-        font-size:23px;
+        font-size:20px;
         padding: 15px;
         border-radius:2px;
         color:black;
@@ -55,6 +55,7 @@ header{
     margin-top: 2rem;
     padding:0 5rem;
     width: 100%;
+    max-width: 2200px;
 
     & h2{
         font-size: 45px;
@@ -102,6 +103,8 @@ header{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            border: solid 1px var(--primary);
+            transition:all 0.2s ease;
 
             & .info{
                 width: 100%;
@@ -136,6 +139,15 @@ header{
                         fill:#FF2D2D;
                     }
                 }
+            }
+
+            &.oculto{
+                display: none;
+            }
+
+            &:hover{
+                border-color: var(--border);
+                transform: translateY(-5px);
             }
         }
     }
@@ -297,4 +309,49 @@ header{
     visibility: visible;
     opacity:1;
     bottom:0;
+}
+
+@media (max-width: 768px) {
+    .tarefas{
+        padding: 10px;
+
+        & ul{
+
+            & li{
+                width: calc(33% - 1.2rem);
+            }
+        }
+    }
+}
+
+@media (max-width: 657px) {
+    .tarefas{
+        padding: 10px;
+
+        & ul{
+
+            & li{
+                width: calc(50% - 1.2rem);
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .modal{
+        width:20rem;
+    }
+}
+
+@media (max-width: 355px) {
+    .tarefas{
+        padding: 10px;
+
+        & ul{
+
+            & li{
+                width: calc(100%);
+            }
+        }
+    }
 }
