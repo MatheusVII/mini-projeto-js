@@ -6,6 +6,8 @@ function abrirModal(){
 function fecharModal(){
     criarTarefa.classList.remove("active");
     overlay.classList.remove("active");
+    titulo.value = "";
+    descricao.value = "";
 }
 
 function buscarTarefas(){
@@ -21,23 +23,23 @@ function inserirTarefas(listaTarefas){
         lista.innerHTML = "";
         listaTarefas.forEach(tarefa => {
             let li = document.createElement("li");
-            li.dataset.id = tarefa.id;
             li.innerHTML = `   
                     <div class="info">          
                         <h4>${tarefa.titulo}</h4>
                         <p>${tarefa.descricao}</p>
                     </div>
                     <div class="btn-apagar">
-                        <box-icon type='solid' name='trash'></box-icon>
+                        <box-icon type='solid' name='trash' onclick="deletarTarefa(${tarefa.id})"></box-icon>
                     </div>
                     `
             lista.appendChild(li);
         });
     }
     else{
+        lista.innerHTML = "";
         let h6 = document.createElement("h6");
         h6.textContent = "Nenhuma tarefa registrada";
-        tarefas.appendChild(h6);
+        lista.appendChild(h6);
     }
 }
 
@@ -57,9 +59,32 @@ function novaTarefa(){
     .then(res => {
         buscarTarefas()
         fecharModal()
+        ativarAlerta("Tarefa criada com sucesso!");
     })
 
 ;
+}
+
+function deletarTarefa(id){
+    fetch(`http://localhost:3000/tarefas/${id}`,{
+        method: "DELETE"
+    })
+    .then(res => res.json)
+    .then(res => {
+        buscarTarefas();
+        ativarAlerta("Tarefa deletada com sucesso!");
+    })
+}
+
+function ativarAlerta(texto){
+    const alerta = document.querySelector(".alerta");
+    alerta.classList.add("active");
+    alertaTexto.textContent = texto;
+}
+
+function fecharAlerta(){
+    const alerta = document.querySelector(".alerta");
+    alerta.classList.remove("active");
 }
 
 buscarTarefas();

@@ -81,6 +81,7 @@ header{
 
     & h6{
         text-align: center;
+        width: 100%;
         font-size:15px;
         color: var(--text-secondary);
     }
@@ -261,4 +262,39 @@ header{
 #overlay.active{
     opacity: 1;
     visibility: visible;
+}
+
+.alerta{
+    position: fixed;
+    bottom: -50px;
+    right: 0;
+    background: var(--secondary);
+    margin: 10px;
+    padding:1.7rem 1rem;
+    box-shadow: var(--shadow);
+    border-radius: 2px;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 200ms;
+
+    & p{
+        font-weight: bold;
+        font-size:17px;
+    }
+
+    & box-icon{
+        position:absolute;
+        top:0;
+        right: 0;
+        fill:white;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor:pointer;
+    }
+}
+
+.alerta.active{
+    visibility: visible;
+    opacity:1;
+    bottom:0;
 }
